@@ -8,6 +8,7 @@
     "prepublishOnly": "npm run build",
     "build": "cross-env NODE_ENV=development webpack-cli --progress --colors",
     "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Krissie Holifield <krissie@suralink.com>",

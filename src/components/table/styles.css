@@ -1,0 +1,5 @@
+.suralink-table  .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > thead > tr > th,
+.suralink-table  .ant-table > .ant-table-container > .ant-table-content > table > thead > tr > th {
+    background-color: #408978;
+    color: #fff;
+}

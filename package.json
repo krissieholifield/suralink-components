@@ -6,7 +6,7 @@
   "scripts": {
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prepublishOnly": "npm run build",
-    "start": "cross-env NODE_ENV=development webpack-cli --progress --colors",
+    "build": "cross-env NODE_ENV=development webpack-cli --progress --colors",
     "styleguide": "styleguidist server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

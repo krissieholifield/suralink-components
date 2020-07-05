@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { Button, Modal, Tooltip } from 'antd';
+import {
+  Button, Card, Modal, Tooltip,
+} from 'antd'; // eslint-disable-line
 
 /**
  * The only true HelloWorld component
@@ -12,14 +13,14 @@ const HelloWorld = ({ title }) => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <span>
+    <Card>
       <Tooltip title="Tooltip title...">{title}</Tooltip>
       <br />
       <Button onClick={() => setVisible(!visible)}>Click Me</Button>
       <Modal visible={visible} onCancel={() => setVisible(!visible)}>
         Hello World!
       </Modal>
-    </span>
+    </Card>
   );
 };
 
